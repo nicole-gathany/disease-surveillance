@@ -123,23 +123,51 @@
 
     <form>
         <h1>Patient Demographic Information</h1>
-           <label>Patient Last Name</label>
+           <label>Patient Last Name</label><input type="text">
            <br>
-           <label>Patient First Name</label>
+           <label>Patient First Name</label><input type="text">
            <br>
-           <label>Patient Date of Birth</label>
+           <label>Patient Date of Birth</label><input type="date">
            <br>
-           <label>Patient Age</label>     
+           <label>Patient Age</label> <input type="number">   
            <br>
            <label>Patient Gender</label>
            <br>
+           <input type="radio" id="male" name="gender" value="male">
+           <label for="male">Male</label><br>
+           <input type="radio" id="female" name="gender" value="female">
+           <label for="female">Female</label><br>
+           <input type="radio" id="other" name="gender" value="other">
+           <label for="other">Other</label>
+           <input type="radio" id="unknown" name="gender" value="unknown">
+           <label for="unknown">Unknown</label>
+           <br>
            <label>Race</label>
+            <select>
+                <option>Asian</option>
+                <option>American Indian/Native American</option>
+                <option>Black</option>
+                <option>White</option>
+                <option>Unkown</option>
+                <option>Unknown</option>
+                <option>Other</option>
+            </select>
            <br>
            <label>If race is "other" specify.</label>
+            <input type="text">
            <br>
            <label>Ethnicity</label>
+            <select>
+                <option>Hispanic/Latino</option>
+                <option>Non-Hispanic/Latino</option>
+                <option>Not specified</option>
+            </select>
            <br>
            <label>Patient residency</label>
+                <input type="radio" id="usa" name="residency" value="usa">
+                <label for="usa">US resident</label>
+                <input type="radio" id="non-usa" name="residency" value="non-usa">
+                <label for="non-usa">Non-US resident</label>
            <br>
            <label>Patient address</label>
            <br>
@@ -175,6 +203,21 @@
 
     <form>
         <h2>Patient Under Investigation (PUI) Criteria</h2>
+        <label>Symptom Onset Date</label>
+        <label>During this illness, did the patient experience any of the following symptoms?</label>
+        <label>Fever > 100.4</label>
+        <label>Subjective fever (felt feverish)</label>
+        <label>Chills</label>
+        <label>Muscle aches (myalgia)</label>
+        <label>Runny nose (rhinorrhea)</label>
+        <label>Cough (new onset of worsening of chronic cough)</label>
+        <label>Shortness of breath (dyspnea)</label>
+        <label>Nausea or vomiting</label>
+        <label>Headache</label>
+        <label>Abdominal pain</label>
+        <label>Diarrhea (>=3 loose/looser stools in 24hr period)</label>
+        <label>Other</label>
+
     </form>
     
 
@@ -188,7 +231,7 @@
 
     <form> <h2>Case Confirmation</h2></form>
 
-    <form><h2>NCOV COntacts for Monitoring</h2></form>
+    <form><h2>NCOV Contacts for Monitoring</h2></form>
 
     <form><h2>DOCUMENT UPLOAD</h2></form>
         
